@@ -1,6 +1,6 @@
 # Scary Maze Game
 
-A full stack browser game.
+A browser game.
 
 ### https://hqscarymaze.herokuapp.com
 
