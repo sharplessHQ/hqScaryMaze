@@ -1,11 +1,11 @@
-const nextButton = document.querySelector(".next-button");
+const levelButton = document.querySelector(".level-button");
 
 const levelOne = document.querySelector(".level-one");
 const levelTwo = document.querySelector(".level-two");
 
-const uiLevel = document.querySelector(".ui-level");
-const uiMessage = document.querySelector(".ui-message");
-const uiMessage2 = document.querySelector(".ui-message2");
+const mazeLevel = document.querySelector(".maze-level");
+const mazeMessage = document.querySelector(".maze-message");
+const mazeMessage2 = document.querySelector(".maze-message2");
 
 const endPicture = document.querySelector(".end-picture");
 const endSound = document.querySelector(".end-sound");
@@ -15,8 +15,8 @@ const collisionCheck = (value) => {
     alert("You lost! Try again!");
   }
   if (value === "finish") {
-    nextButton.style.opacity = 1;
-    nextButton.style.pointerEvents = "all";
+    levelButton.style.opacity = 1;
+    levelButton.style.pointerEvents = "all";
     levelOne.style.pointerEvents = "none";
   }
   if (value === "end-game") {
@@ -32,12 +32,12 @@ window.addEventListener("mousemove", (e) => {
   collisionCheck(check);
 });
 
-nextButton.addEventListener("click", () => {
+levelButton.addEventListener("click", () => {
   levelOne.style.display = "none";
   levelTwo.style.display = "block";
-  nextButton.style.opacity = 0;
-  nextButton.style.pointerEvents = "none";
-  uiLevel.textContent = "Level 2";
-  uiMessage.textContent = "Nice try! One more to go!";
-  uiMessage2.textContent = "Don't touch the walls!";
+  levelButton.style.opacity = 0;
+  levelButton.style.pointerEvents = "none";
+  mazeLevel.textContent = "Level 2";
+  mazeMessage.textContent = "Nice try! One more to go!";
+  mazeMessage2.textContent = "Don't touch the walls!";
 });

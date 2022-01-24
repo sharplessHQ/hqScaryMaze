@@ -24,14 +24,14 @@ body {
   justify-content: center;
 }
 
-.ui-level {
+.maze-level {
   font-size: 4rem;
   padding-top: 2rem;
   color: #034749;
 }
 
-.ui-message,
-.ui-message2 {
+.maze-message,
+.maze-message2 {
   font-size: 2rem;
   color: #034749;
 }
@@ -40,7 +40,7 @@ body {
   display: none;
 }
 
-.next-button {
+.level-button {
   padding: 1rem 3rem;
   border-radius: 10%;
   background: #034749;
