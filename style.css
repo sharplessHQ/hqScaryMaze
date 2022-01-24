@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: powderblue;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.description {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ui-level {
+  font-size: 4rem;
+  padding-top: 2rem;
+  color: #034749;
+}
+
+.ui-message,
+.ui-message2 {
+  font-size: 2rem;
+  color: #034749;
+}
+
+.level-two {
+  display: none;
+}
+
+.next-button {
+  padding: 1rem 3rem;
+  border-radius: 10%;
+  background: #034749;
+  color: powderblue;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.end-picture {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
