@@ -2,7 +2,7 @@
 
 A browser game.
 
-### https://hqscarymaze.herokuapp.com
+### https://hqscarymaze.onrender.com
 
 ## Scary Maze
 
